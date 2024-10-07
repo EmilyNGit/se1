@@ -18,8 +18,7 @@ public class Client {
 			// Strenge Implementierung (nur) gegen das Interface Translator gewuenscht!
 
 			 Translator translator = Factory.createTranslator("Okt/2024");
-			 System.out.print("Das Ergebnis der Berechnung: ");
-			 translator.translateNumber(aNumber);
+			 System.out.print("Das Ergebnis der Berechnung: " + translator.translateNumber(aNumber));
 		 }
 }
 
