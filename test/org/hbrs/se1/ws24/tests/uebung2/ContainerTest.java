@@ -1,4 +1,4 @@
-package org.hbrs.se1.ws24.test.uebung2;
+package org.hbrs.se1.ws24.tests.uebung2;
 
 import org.hbrs.se1.ws24.exercises.uebung2.*;
 
