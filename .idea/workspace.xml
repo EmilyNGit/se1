@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="erste fertige Version">
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/control/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung1/view/Client.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="überarbeitete display-Methode">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/test/uebung2/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EmilyNGit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aldaGit/codesSEws24.git&quot;,
+    &quot;accountId&quot;: &quot;1881158f-9a8f-4d5e-881b-1f7c34c80861&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -35,6 +50,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ContainerTest.executor": "Run",
+    "JUnit.ContainerTest.testAddDuplicateMember.executor": "Run",
+    "JUnit.ContainerTest.testAddMember.executor": "Run",
+    "JUnit.ContainerTest.testDeleteMember.executor": "Run",
+    "JUnit.ContainerTest.testDeleteNonExistentMember.executor": "Run",
+    "JUnit.ContainerTest.testDumpMembers.executor": "Run",
+    "JUnit.ContainerTest.testSize.executor": "Run",
     "JUnit.GermanTranslatorTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -51,6 +73,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,25 +83,94 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="GermanTranslatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContainerTest.testSize">
+    <configuration name="ContainerTest.testAddDuplicateMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung1.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.test.uebung2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung1" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung1.GermanTranslatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.test.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.test.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testAddDuplicateMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.test.uebung2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.test.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.test.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testDeleteMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testDeleteNonExistentMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.test.uebung2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.test.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.test.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testDeleteNonExistentMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testDumpMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.test.uebung2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.test.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.test.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testDumpMembers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.test.uebung2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.test.uebung2" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.test.uebung2.ContainerTest" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GermanTranslatorTest" />
+        <item itemvalue="JUnit.ContainerTest.testSize" />
+        <item itemvalue="JUnit.ContainerTest.testDumpMembers" />
+        <item itemvalue="JUnit.ContainerTest.testDeleteNonExistentMember" />
+        <item itemvalue="JUnit.ContainerTest.testDeleteMember" />
+        <item itemvalue="JUnit.ContainerTest.testAddDuplicateMember" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +194,10 @@
       <workItem from="1728129577423" duration="18000" />
       <workItem from="1728129603184" duration="414000" />
       <workItem from="1728130024561" duration="659000" />
-      <workItem from="1728207176337" duration="5042000" />
+      <workItem from="1728207176337" duration="10071000" />
+      <workItem from="1728317000561" duration="261000" />
+      <workItem from="1728458500290" duration="1106000" />
+      <workItem from="1729009903241" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="erste Version">
       <option name="closed" value="true" />
@@ -120,15 +215,61 @@
       <option name="project" value="LOCAL" />
       <updated>1728211972365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="überarbeiteter Name für Create-Methode">
+      <option name="closed" value="true" />
+      <created>1728212296827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728212296827</updated>
+    </task>
+    <task id="LOCAL-00004" summary="überarbeitete display-Methode">
+      <option name="closed" value="true" />
+      <created>1728317091644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728317091644</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="5a125a18-e8e2-4450-a54e-1d9322b7c5da" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="5a125a18-e8e2-4450-a54e-1d9322b7c5da">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/emily/Studium/drittesSemester/SE1/src" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -140,6 +281,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="erste Version" />
     <MESSAGE value="erste fertige Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="erste fertige Version" />
+    <MESSAGE value="überarbeiteter Name für Create-Methode" />
+    <MESSAGE value="überarbeitete display-Methode" />
+    <option name="LAST_COMMIT_MESSAGE" value="überarbeitete display-Methode" />
   </component>
 </project>
