@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="überarbeitete display-Methode">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/test/uebung2/ContainerTest.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="überarbeitete Aufgabe 2">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/MemberView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung2/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung2/test/ContainerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,9 @@
     &quot;accountId&quot;: &quot;1881158f-9a8f-4d5e-881b-1f7c34c80861&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -47,40 +52,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.ContainerTest.executor": "Run",
-    "JUnit.ContainerTest.testAddDuplicateMember.executor": "Run",
-    "JUnit.ContainerTest.testAddMember.executor": "Run",
-    "JUnit.ContainerTest.testDeleteMember.executor": "Run",
-    "JUnit.ContainerTest.testDeleteNonExistentMember.executor": "Run",
-    "JUnit.ContainerTest.testDumpMembers.executor": "Run",
-    "JUnit.ContainerTest.testSize.executor": "Run",
-    "JUnit.GermanTranslatorTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/saschaalda/IdeaProjects/codesSE2024/src/org/hbrs/se1/ws24/exercises",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.ContainerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testAddDuplicateMember.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testAddMember.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testDeleteMember.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testDeleteNonExistentMember.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testDumpMembers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContainerTest.testSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GermanTranslatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/saschaalda/IdeaProjects/codesSE2024/src/org/hbrs/se1/ws24/exercises&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung3.persistence" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ContainerTest.testSize">
@@ -197,7 +205,9 @@
       <workItem from="1728207176337" duration="10071000" />
       <workItem from="1728317000561" duration="261000" />
       <workItem from="1728458500290" duration="1106000" />
-      <workItem from="1729009903241" duration="643000" />
+      <workItem from="1729009903241" duration="1635000" />
+      <workItem from="1729064718348" duration="1567000" />
+      <workItem from="1729254343879" duration="5302000" />
     </task>
     <task id="LOCAL-00001" summary="erste Version">
       <option name="closed" value="true" />
@@ -231,7 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728317091644</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aufgabe 2">
+      <option name="closed" value="true" />
+      <created>1729010563341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729010563341</updated>
+    </task>
+    <task id="LOCAL-00006" summary="überarbeitete Aufgabe 2">
+      <option name="closed" value="true" />
+      <created>1729010915656</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729010915656</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +309,8 @@
     <MESSAGE value="erste fertige Version" />
     <MESSAGE value="überarbeiteter Name für Create-Methode" />
     <MESSAGE value="überarbeitete display-Methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="überarbeitete display-Methode" />
+    <MESSAGE value="Aufgabe 2" />
+    <MESSAGE value="überarbeitete Aufgabe 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="überarbeitete Aufgabe 2" />
   </component>
 </project>

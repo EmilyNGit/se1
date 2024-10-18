@@ -1,12 +1,24 @@
 package org.hbrs.se1.ws24.solutions.uebung2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-public class Container {
+public class Container implements Serializable {
+
+	private static Container instance;
+
+	private Container(){}
+
+	public static Container getInstance(){
+		if(instance == null){
+			instance = new Container();
+		}
+		return instance;
+	}
 
 	/*
 	 * Interne ArrayList zur Abspeicherung der Objekte
