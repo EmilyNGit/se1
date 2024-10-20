@@ -5,7 +5,6 @@ import org.hbrs.se1.ws24.solutions.uebung2.Member;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Container implements Serializable {
@@ -119,4 +118,14 @@ public class Container implements Serializable {
 		return null;
 	}
 
+	public void save() throws PersistenceException{
+		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
+		strategy.save(this.getCurrentList());
+	}
+
+	public List<Member> load() throws PersistenceException{
+		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
+		this.liste = strategy.load();
+		return null;
+	}
 }

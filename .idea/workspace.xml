@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="überarbeitete Aufgabe 2">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/MemberView.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="erste Version Aufgabe3">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung3/ContainerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung2/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung2/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung2/test/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/MemberView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2mW0K1ridSNtBXJ1HQIirtbe7AX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -207,7 +209,9 @@
       <workItem from="1728458500290" duration="1106000" />
       <workItem from="1729009903241" duration="1635000" />
       <workItem from="1729064718348" duration="1567000" />
-      <workItem from="1729254343879" duration="5302000" />
+      <workItem from="1729254343879" duration="5639000" />
+      <workItem from="1729420859216" duration="517000" />
+      <workItem from="1729422681729" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="erste Version">
       <option name="closed" value="true" />
@@ -257,7 +261,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729010915656</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="erste Version Aufgabe3">
+      <option name="closed" value="true" />
+      <created>1729259873647</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729259873647</updated>
+    </task>
+    <task id="LOCAL-00008" summary="erste Version Aufgabe3">
+      <option name="closed" value="true" />
+      <created>1729259927050</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729259927050</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +331,7 @@
     <MESSAGE value="überarbeitete display-Methode" />
     <MESSAGE value="Aufgabe 2" />
     <MESSAGE value="überarbeitete Aufgabe 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="überarbeitete Aufgabe 2" />
+    <MESSAGE value="erste Version Aufgabe3" />
+    <option name="LAST_COMMIT_MESSAGE" value="erste Version Aufgabe3" />
   </component>
 </project>
