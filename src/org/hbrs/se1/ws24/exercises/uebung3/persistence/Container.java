@@ -10,6 +10,7 @@ import java.util.List;
 public class Container implements Serializable {
 
 	private static Container instance;
+	private PersistenceStrategy<Member> strategy;
 
 	private Container(){}
 
@@ -92,14 +93,6 @@ public class Container implements Serializable {
 	 * natuerlich auskommentiert werden.
 	 * 
 	 */
-	public void dump(){
-		System.out.println("Ausgabe aller Member-Objekte: ");
-		
-		// Loesung Nr. 1 mit For each Schleife: Sequentielle Bearbeitung der Schleife
-		for ( Member p : liste ) {
-			System.out.println( p.toString()  );
-		}
-	}
 
 	public List<Member> getCurrentList() {
 		return liste;
@@ -118,7 +111,7 @@ public class Container implements Serializable {
 		return null;
 	}
 
-	public void save() throws PersistenceException{
+	public void store() throws PersistenceException{
 		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
 		strategy.save(this.getCurrentList());
 	}
@@ -127,5 +120,9 @@ public class Container implements Serializable {
 		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
 		this.liste = strategy.load();
 		return null;
+	}
+
+	public void setStrategy(PersistenceStrategy strategy) {
+		this.strategy = strategy;
 	}
 }
