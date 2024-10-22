@@ -112,17 +112,21 @@ public class Container implements Serializable {
 	}
 
 	public void store() throws PersistenceException{
-		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
+		if(strategy == null) throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "Keine Strategie gesetzt");
 		strategy.save(this.getCurrentList());
 	}
 
-	public List<Member> load() throws PersistenceException{
-		PersistenceStrategy<Member> strategy = new PersistenceStrategyStream<>();
+	public void load() throws PersistenceException{
+		if(strategy == null) throw new PersistenceException(PersistenceException.ExceptionType.NoStrategyIsSet, "Keine Strategie gesetzt");
 		this.liste = strategy.load();
-		return null;
 	}
 
 	public void setStrategy(PersistenceStrategy strategy) {
 		this.strategy = strategy;
 	}
+
+	public PersistenceStrategy getStrategy(){
+		return strategy;
+	}
+
 }

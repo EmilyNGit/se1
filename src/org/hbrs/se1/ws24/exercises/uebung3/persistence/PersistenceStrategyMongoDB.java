@@ -5,12 +5,12 @@ import java.util.List;
 public class PersistenceStrategyMongoDB<E> implements PersistenceStrategy<E> {
 
     @Override
-    public void save(List<E> member) {
-        throw new UnsupportedOperationException("Not implemented!");
+    public void save(List<E> member) throws PersistenceException {
+        throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "MongoDB noch nicht implementiert");
     }
 
     @Override
-    public List<E> load() {
-        throw new UnsupportedOperationException("Not implemented!");
+    public List<E> load() throws PersistenceException {
+        throw new PersistenceException(PersistenceException.ExceptionType.ImplementationNotAvailable, "MongoDB noch nicht implementiert");
     }
 }
