@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="synchronized hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/UserStory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/VUS.java" afterDir="false" />
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="erste Version Uebung4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/UserStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/UserStory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/VUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/VUS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Container.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +214,7 @@
       <workItem from="1729601718400" duration="638000" />
       <workItem from="1729669485062" duration="517000" />
       <workItem from="1729671485041" duration="30000" />
-      <workItem from="1730274980274" duration="9516000" />
+      <workItem from="1730274980274" duration="10596000" />
     </task>
     <task id="LOCAL-00001" summary="erste Version">
       <option name="closed" value="true" />
@@ -330,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729670425920</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="erste Version Uebung4">
+      <option name="closed" value="true" />
+      <created>1730285488965</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730285488965</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +395,7 @@
     <MESSAGE value="dritte Version Aufgabe3" />
     <MESSAGE value="vierte Version Aufgabe3" />
     <MESSAGE value="synchronized hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchronized hinzugefügt" />
+    <MESSAGE value="erste Version Uebung4" />
+    <option name="LAST_COMMIT_MESSAGE" value="erste Version Uebung4" />
   </component>
 </project>

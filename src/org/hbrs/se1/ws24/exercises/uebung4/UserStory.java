@@ -43,6 +43,6 @@ public class UserStory implements Member, Serializable {
 
     @Override
     public String toString() {
-        return this.id + " | " + this.titel + " | " + this.kriterium + " | " + this.projekt + " | " + this.priowert;
+        return this.id + " | " + this.titel + " | " + this.kriterium + " | " + this.projekt + " | " + this.priowert ;
     }
 }

@@ -61,7 +61,7 @@ public class VUS {
                         throw new RuntimeException(e);
                     }
                 case "dump":
-                    System.out.println(container.toString());
+                    container.String();
                     break;
                 default:
                     System.out.println("Bitte geben Sie einen gültigen Befehl ein.");

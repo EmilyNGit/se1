@@ -183,7 +183,9 @@ public class Container<T extends Member> {
 	public void deleteAllObjects() throws PersistenceException {
 		this.liste.clear();
 	}
-	public String toString(){
-		return this.liste.toString();
+	public void String() {
+		for (T obj : liste) {
+			System.out.println(obj.toString());
+		}
 	}
 }
