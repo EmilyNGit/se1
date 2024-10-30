@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="erste Version Uebung4">
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="zweite Version Uebung4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/UserStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/UserStory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/VUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung4/VUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/solutions/uebung3/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung3/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/solutions/uebung3/test/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung4/VUSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung4/VUSTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,9 @@
     "JUnit.ContainerTest.testSize.executor": "Run",
     "JUnit.ContainerTest.testWrongFileLocation.executor": "Run",
     "JUnit.GermanTranslatorTest.executor": "Run",
+    "JUnit.VUSTest.executor": "Run",
+    "JUnit.VUSTest.testAddMember.executor": "Run",
+    "JUnit.VUSTest.testDeleteNonExistentMember.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -95,75 +97,81 @@
       <recent name="org.hbrs.se1.ws24.exercises.uebung3.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VUS">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.solutions.uebung3.Main" />
+  <component name="RunManager" selected="JUnit.VUSTest">
+    <configuration name="VUSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.solutions.uebung3.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VUS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.exercises.uebung4.VUS" />
-      <module name="codesSE2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.exercises.uebung4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung3" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung3.ContainerTest" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung4" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung4.VUSTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.StrategieMongo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VUSTest.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung3.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung3" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung3.ContainerTest" />
-      <option name="METHOD_NAME" value="StrategieMongo" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung4" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung4.VUSTest" />
+      <option name="METHOD_NAME" value="testDeleteMember" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.testWrongFileLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VUSTest.testDeleteNonExistentMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codesSE2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung3.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung3" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung3.ContainerTest" />
-      <option name="METHOD_NAME" value="testWrongFileLocation(java.nio.file.Path)" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung4" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung4.VUSTest" />
+      <option name="METHOD_NAME" value="testDeleteNonExistentMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VUSTest.testDumpMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung4" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung4.VUSTest" />
+      <option name="METHOD_NAME" value="testDumpMembers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VUSTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codesSE2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws24.tests.uebung4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws24.tests.uebung4" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws24.tests.uebung4.VUSTest" />
+      <option name="METHOD_NAME" value="testSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VUS" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ContainerTest" />
-        <item itemvalue="JUnit.ContainerTest.testWrongFileLocation" />
-        <item itemvalue="JUnit.ContainerTest.StrategieMongo" />
+        <item itemvalue="JUnit.VUSTest" />
+        <item itemvalue="JUnit.VUSTest.testSize" />
+        <item itemvalue="JUnit.VUSTest.testDumpMembers" />
+        <item itemvalue="JUnit.VUSTest.testDeleteNonExistentMember" />
+        <item itemvalue="JUnit.VUSTest.testDeleteMember" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +222,8 @@
       <workItem from="1729601718400" duration="638000" />
       <workItem from="1729669485062" duration="517000" />
       <workItem from="1729671485041" duration="30000" />
-      <workItem from="1730274980274" duration="10596000" />
+      <workItem from="1730274980274" duration="11668000" />
+      <workItem from="1730290854259" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="erste Version">
       <option name="closed" value="true" />
@@ -336,7 +345,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730285488965</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="zweite Version Uebung4">
+      <option name="closed" value="true" />
+      <created>1730286418154</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730286418154</updated>
+    </task>
+    <task id="LOCAL-00017" summary="zweite Version Uebung4">
+      <option name="closed" value="true" />
+      <created>1730286735065</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730286735065</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,6 +421,18 @@
     <MESSAGE value="vierte Version Aufgabe3" />
     <MESSAGE value="synchronized hinzugefügt" />
     <MESSAGE value="erste Version Uebung4" />
-    <option name="LAST_COMMIT_MESSAGE" value="erste Version Uebung4" />
+    <MESSAGE value="zweite Version Uebung4" />
+    <option name="LAST_COMMIT_MESSAGE" value="zweite Version Uebung4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung4/VUSTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

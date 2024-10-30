@@ -87,15 +87,15 @@ class ContainerTest {
     void testStoreDeleteAndLoad() {
         try {
             // Löschen aller Objekte, damit das Singleton leer ist
-            container.deleteAllMembers();
+            container.deleteAllObjects();
 
             container.setPersistenceStrategie( new PersistenceStrategyStream<Member>() );
-            container.addMember(new MemberKonkret(1));
+            container.addObject(new MemberKonkret(1));
 
             assertEquals( 1 , container.size() );
             container.store();
 
-            container.deleteMember(1);
+            container.deleteObject(1);
             assertEquals(0 , container.size() );
 
             container.load();
@@ -110,9 +110,9 @@ class ContainerTest {
     void testStoreManyTime() {
         try {
             container.setPersistenceStrategie( new PersistenceStrategyStream<Member>() );
-            container.addMember(new MemberKonkret(1));
-            container.addMember(new MemberKonkret(12) ) ;
-            container.addMember(new MemberKonkret(13) );
+            container.addObject(new MemberKonkret(1));
+            container.addObject(new MemberKonkret(12) ); ;
+            container.addObject(new MemberKonkret(13) );
 
             assertEquals( 3 , container.size() );
             container.store(); // overwriting existing ones!
