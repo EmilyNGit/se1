@@ -12,7 +12,7 @@ public class Client {
 
         // Hinzufügen von Member-Objekt
         try {
-            container.addMember(new MemberKonkret(2));
+            container.addObject(new MemberKonkret(2));
         } catch (ContainerException e) {
             e.printStackTrace();
         }

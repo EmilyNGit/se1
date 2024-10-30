@@ -14,7 +14,7 @@ public class Container implements Serializable {
 
 	private Container(){}
 
-	public static  Container getInstance(){
+	public static Container getInstance(){
 		if(instance == null){
 			synchronized(Container.class){
 				if(instance == null){

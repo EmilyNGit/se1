@@ -14,10 +14,10 @@ import java.util.List;
  *
  */
 
-public class Container {
+public class Container<T extends Member> {
 
 	// Interne ArrayList zur Abspeicherung der Objekte
-	private List<Member> liste = null;
+	private List<T> liste = null;
 
 	// Statische Klassen-Variable, um die Referenz
 	// auf das einzige Container-Objekt abzuspeichern
@@ -41,16 +41,8 @@ public class Container {
 	public static synchronized Container getInstance() {
 		if (instance == null) {
 			instance = new Container();
-			System.out.println("Objekt vom Typ Container wurde instanziiert!");
 		}
 		return instance;
-	}
-
-	// Der statische Initialisierungsblock. Dient nur für Debug-Zwecke
-	// zur Verdeutlichung, wann eine Klasse geladen wird.
-	static {
-		System.out.println("Klasse Container wurde geladen!");
-		// instance = new Container();
 	}
 
 	/**
@@ -60,8 +52,7 @@ public class Container {
 	 * der Klasse Container!
 	 */
 	private Container(){
-		System.out.println("Container ist instanziiert (Konstruktor)!");
-		this.liste = new ArrayList<Member>();
+		this.liste = new ArrayList<T>();
 	}
 
 
@@ -78,7 +69,7 @@ public class Container {
 	 * @param r
 	 * @throws ContainerException
 	 */
-	public void addMember ( Member r ) throws ContainerException {
+	public void addObject ( T r ) throws ContainerException {
 		if ( contains( r ) == true ) {
 			System.out.println("Duplikat: " + r.toString() );
 			ContainerException ex = new ContainerException( ContainerException.ExceptionType.DuplicateMember );
@@ -92,9 +83,9 @@ public class Container {
 	 * Methode zur Ueberpruefung, ob ein Member-Objekt in der Liste enthalten ist
 	 *
 	 */
-	private boolean contains( Member r) {
+	private boolean contains( T r) {
 		Integer ID = r.getID();
-		for ( Member rec : liste) {
+		for ( T rec : liste) {
 			if ( rec.getID() == ID ) {
 				return true;
 			}
@@ -106,8 +97,8 @@ public class Container {
 	 * Method for deleting an object with a given id.
 	 *
 	 */
-	public String deleteMember(Integer id ) {
-		Member rec = getMember( id );
+	public String deleteObject(Integer id ) {
+		T rec = getObject( id );
 		if (rec == null) return "Member nicht enthalten - ERROR"; else {
 			liste.remove(rec);
 			return "Member mit der ID " + id + " konnte geloescht werden";
@@ -127,8 +118,8 @@ public class Container {
 	 * Interne Methode zur Ermittlung eines Member
 	 *
 	 */
-	private Member getMember(Integer id) {
-		for ( Member rec : liste) {
+	private T getObject(Integer id) {
+		for ( T rec : liste) {
 			if (id == rec.getID().intValue() ){
 				return rec;
 			}
@@ -148,7 +139,7 @@ public class Container {
 					"Strategy not initialized");
 
 		try {
-			List<Member> liste = this.strategy.load();
+			List<T> liste = this.strategy.load();
 			this.liste = liste;
 		} catch ( java.lang.UnsupportedOperationException e) {
 			throw new PersistenceException(
@@ -189,8 +180,10 @@ public class Container {
 	 * Methode zum Löschen aller Member-Objekte
 	 * @throws PersistenceException
 	 */
-	public void deleteAllMembers() throws PersistenceException {
+	public void deleteAllObjects() throws PersistenceException {
 		this.liste.clear();
 	}
-
+	public String toString(){
+		return this.liste.toString();
+	}
 }
