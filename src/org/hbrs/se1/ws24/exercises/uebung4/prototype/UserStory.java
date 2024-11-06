@@ -1,5 +1,8 @@
 package org.hbrs.se1.ws24.exercises.uebung4.prototype;
-    public class UserStory {
+
+import java.io.Serializable;
+
+public class UserStory implements Serializable {
         // ToDo: Sind die Attribute der Klasse UserStory vollständig? Wie sieht es mit den
         //  Sichtbarkeiten aus? (F4)
 
